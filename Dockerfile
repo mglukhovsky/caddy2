@@ -4,6 +4,6 @@ FROM caddy/caddy:2.0.0-rc.2-builder AS builder
 RUN caddy-builder \
   github.com/caddyserver/tls.dns
   
-FROM caddy/caddy:v2.0.0
+FROM caddy/caddy:2.0.0-rc.2
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
