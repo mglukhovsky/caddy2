@@ -1,4 +1,4 @@
-FROM caddy/caddy:v2.0.0-builder as builder
+FROM caddy/caddy:v2.0.0-rc.2-builder AS builder
 
 # Add the DNS provider for Cloudflare
 RUN caddy-builder \
